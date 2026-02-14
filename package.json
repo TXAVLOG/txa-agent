@@ -1,6 +1,6 @@
 {
   "name": "txa-agent",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "🚀 TXA Agent - AI-Powered Development Workspace Toolkit. 23 Agents, 17 Rules, 11 Skills, 22 Workflows. Multi-IDE Support.",
   "main": "lib/installer.js",
   "bin": {
