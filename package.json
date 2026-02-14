@@ -1,0 +1,50 @@
+{
+  "name": "txa-agent",
+  "version": "1.0.0",
+  "description": "🚀 TXA Agent - AI-Powered Development Workspace Toolkit. 23 Agents, 17 Rules, 11 Skills, 22 Workflows. Multi-IDE Support.",
+  "main": "lib/installer.js",
+  "bin": {
+    "txa-agent": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "lib/",
+    "template/",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node bin/cli.js info"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "ide",
+    "vscode",
+    "cursor",
+    "windsurf",
+    "antigravity",
+    "developer-tools",
+    "productivity",
+    "txa"
+  ],
+  "author": "TXA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/txa-dev/txa-agent.git"
+  },
+  "homepage": "https://github.com/txa-dev/txa-agent#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0",
+    "fs-extra": "^11.2.0",
+    "gradient-string": "^2.0.2",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
