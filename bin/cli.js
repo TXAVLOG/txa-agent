@@ -10,6 +10,16 @@ const { showBanner, showInfo } = require('../lib/ui');
 const { detectIDE, IDE_MAP } = require('../lib/ide-detector');
 const { install } = require('../lib/installer');
 const pkg = require('../package.json');
+const gradient = require('gradient-string');
+
+// === GLOBAL HEADER ===
+// Show banner immediately on every command execution
+try {
+    showBanner();
+} catch (e) {
+    // Fallback if banner fails (should not happen)
+    console.log('TXA Agent v' + pkg.version);
+}
 
 const program = new Command();
 
@@ -26,7 +36,7 @@ program
     .option('-d, --dir <path>', 'Target directory (default: current directory)')
     .option('-f, --force', 'Overwrite existing .agent folder')
     .action(async (options) => {
-        await showBanner();
+        // await showBanner(); // Global header handles this now
         await install(options);
     });
 
@@ -35,7 +45,7 @@ program
     .command('detect')
     .description('Auto-detect current IDE environment')
     .action(async () => {
-        await showBanner();
+        // await showBanner(); // Global header handles this now
         const detected = detectIDE(process.cwd());
         const chalk = require('chalk');
 
@@ -57,7 +67,7 @@ program
     .command('info')
     .description('Show package statistics and capabilities')
     .action(async () => {
-        await showBanner();
+        // await showBanner(); // Global header handles this now
         showInfo();
     });
 
