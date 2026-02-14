@@ -32,9 +32,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/txa-dev/txa-agent.git"
+    "url": "https://github.com/TXAVLOG/txa-agent.git"
   },
-  "homepage": "https://github.com/txa-dev/txa-agent#readme",
+  "homepage": "https://github.com/TXAVLOG/txa-agent#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^11.1.0",
